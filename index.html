@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cuestionario de Diseño Web - Actividad 2</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #111;
+      background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20250512/pngtree-blue-gradient-soft-background-vector-image_17280771.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: inherit;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(1.3);
+      opacity: 0.9;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      background-color: #f0f9ff;
+      padding: 20px;
+      border: 1px solid #aad;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .question p {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    pre {
+      background-color: #eef;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #555;
+    }
+
+    .profile-pic-container {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #76c7c0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 13px;
+      color: #003366;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Foto de perfil -->
+  <div class="profile-pic-container">
+    <img src="file:///C:/Users/PC%20GAMER/Downloads/PERFIL-ezgif.com-jpg-to-webp-converter.webp" alt="Foto de perfil" class="profile-pic" />
+    <p class="name">Sebastián Zamorano Blanco</p>
+  </div>
+
+  <div class="container">
+    <h1>Cuestionario de HTML y Diseño Web</h1>
+
+    <div class="question">
+      <p>1. ¿A qué se denomina Multimedia, hipermedia e hipertexto?</p>
+      <ul>
+        <li><strong>Multimedia:</strong> Combinación de texto, imágenes, audio y video.</li>
+        <li><strong>Hipermedia:</strong> Multimedia con enlaces que permiten navegar.</li>
+        <li><strong>Hipertexto:</strong> Texto enlazado para navegar entre contenidos.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>2. ¿Qué es una Página Web? ¿Qué editores de texto se usan?</p>
+      <ul>
+        <li>Es un documento digital que se muestra en un navegador web.</li>
+        <li>Se usan editores como Notepad++, Visual Studio Code, Atom y Sublime Text.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>3. ¿Qué significa HTML y para qué se lo utiliza?</p>
+      <ul>
+        <li>Significa <strong>HyperText Markup Language</strong>.</li>
+        <li>Se usa para estructurar el contenido de páginas web.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>4. ¿Qué etiquetas marcan el inicio y final de un documento HTML?</p>
+      <ul>
+        <li><code>&lt;html&gt;</code> y <code>&lt;/html&gt;</code></li>
+        <li><code>&lt;!DOCTYPE html&gt;</code> define que es HTML5.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>5. ¿Las etiquetas &lt;BODY&gt; y &lt;/BODY&gt;, qué indican dentro del documento HTML?</p>
+      <ul>
+        <li>Delimitan el cuerpo visible del documento HTML.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>6. ¿Cuáles etiquetas se han declarado dentro de &lt;HEAD&gt; y &lt;/HEAD&gt;?</p>
+      <ul>
+        <li><code>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code></li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>7. ¿Cuáles son las etiquetas de los atributos de texto? Ejemplo de cada uno:</p>
+      <ul>
+        <li><code>&lt;b&gt;Negrita&lt;/b&gt;</code></li>
+        <li><code>&lt;i&gt;Cursiva&lt;/i&gt;</code></li>
+        <li><code>&lt;u&gt;Subrayado&lt;/u&gt;</code></li>
+        <li><code>&lt;strong&gt;Importante&lt;/strong&gt;</code></li>
+        <li><code>&lt;em&gt;Énfasis&lt;/em&gt;</code></li>
+        <li><code>&lt;small&gt;Texto pequeño&lt;/small&gt;</code></li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>8. ¿Cuál es la etiqueta que participa como parámetro en otras etiquetas y qué función cumple?</p>
+      <ul>
+        <li>Los <strong>atributos</strong> como <code>style</code>, <code>class</code> o <code>href</code> funcionan como parámetros.</li>
+        <li>Sirven para modificar el comportamiento o estilo de una etiqueta.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>9. ¿Cuáles son las formas de utilizar las etiquetas de listas? Ejemplos:</p>
+      <ul>
+        <li><code>&lt;ol&gt;</code> – Lista ordenada:</li>
+        <pre><code>&lt;ol&gt;
+  &lt;li&gt;Paso 1&lt;/li&gt;
+  &lt;li&gt;Paso 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <li><code>&lt;ul&gt;</code> – Lista desordenada:</li>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Pan&lt;/li&gt;
+  &lt;li&gt;Leche&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <li><code>&lt;dl&gt;</code> – Lista de definición:</li>
+        <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Lenguaje de marcado&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>10. ¿Cuál sería la forma de colocar un color de fondo a la página web?</p>
+      <ul>
+        <li>Con atributo <code>style</code> en <code>&lt;body&gt;</code>:</li>
+        <code>&lt;body style="background-color: lightblue;"&gt;</code>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>11. ¿Para qué se utiliza la etiqueta &lt;FONT ...&gt;? Aplicar en un ejemplo:</p>
+      <ul>
+        <li>Se usaba para cambiar color y fuente, pero está obsoleta.</li>
+        <li>Ejemplo obsoleto: <code>&lt;font color="blue"&gt;Texto&lt;/font&gt;</code></li>
+        <li>Forma moderna: <code>&lt;span style="color: blue;"&gt;Texto&lt;/span&gt;</code></li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>12. ¿Qué diferencia hay entre usar &lt;P&gt; y &lt;DIV&gt;?</p>
+      <ul>
+        <li><code>&lt;p&gt;</code> es para párrafos, tiene significado semántico.</li>
+        <li><code>&lt;div&gt;</code> es un contenedor genérico sin significado semántico.</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <p>13. ¿Cuál es la estructura básica del código HTML?</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Encabezado&lt;/h1&gt;
+    &lt;p&gt;Contenido&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="question">
+      <p>14. ¿Cuáles son las etiquetas de encabezamiento o título?</p>
+      <ul>
+        <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> – De mayor a menor tamaño e importancia semántica.</li>
+        <li>Ejemplo visual:</li>
+        <div style="padding: 10px; background-color: #eef;">
+          <h1>Sebastian Zamorano Blanco h1 (más grande)</h1>
+          <h2>Sebastian Zamorano Blanco h2</h2>
+          <h3>Sebastian Zamorano Blanco h3</h3>
+          <h4>Sebastian Zamorano Blanco h4</h4>
+          <h5>Sebastian Zamorano Blanco h5</h5>
+          <h6>Sebastian Zamorano Blanco h6 (más pequeño)</h6>
+        </div>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>2025 – Cuestionario Final de Diseño Web | Ingeniería en Sistemas</p>
+    </div>
+  </div>
+</body>
+</html>
